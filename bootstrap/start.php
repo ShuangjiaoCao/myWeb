@@ -26,7 +26,12 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(array(
 
-	'local' => array('homestead'),
+	//'local' => array('Shuangjiaos-MacBook-Air.eduroam.mwn.de'),
+        'local' => array('localhost', gethostname()),
+        //'development' => array('localhost',gethostname()),
+        
+      
+        
 
 ));
 
